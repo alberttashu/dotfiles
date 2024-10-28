@@ -1,0 +1,92 @@
+let mapleader=" "
+
+""" Basic Vim ------------------------------
+
+set so=8
+set incsearch
+set relativenumber
+set number
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap H :m '>-2<CR>gv=gv
+nnoremap <C-u> <C-u>vv
+nnoremap <C-d> <C-d>vv
+xnoremap <leader>p \_dP
+nnoremap <leader>y \+y
+vnoremap <leader>y \+y
+nnoremap <leader>Y \+Y
+nnoremap <leader>d \_d
+nnoremap <leader>d \_d
+
+""" Idea settings ------------------
+
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Plugins ------------------------------
+
+set NERDTree
+
+""" Common ------------------------------
+
+map <leader>z <Action>(ToggleDistractionFreeMode)
+map <leader>o <Action>(ActivateStructureToolWindow)
+map <leader>bb <Action>(BuildSolutionAction)
+map <leader>E <Action>(SelectInProjectView)
+map <leader>= <Action>(ReformatCode)
+map <leader>/ <Action>(CommentByLineComment)
+map <leader>? :map<CR>
+
+""" Find ------------------------------
+
+map <leader>ff <Action>(GotoFile)
+map <leader>fs <Action>(GotoSymbol)
+map <leader>fr <Action>(RecentFiles)
+map <leader>fl <Action>(RecentLocations)
+
+""" Go To ------------------------------
+
+map <leader>gu <Action>(ShowUsages)
+map <leader>gU <Action>(FindUsages)
+map <leader>gd <Action>(GotoDeclaration)
+map <leader>gi <Action>(GotoImplementation)
+map <leader>gb <Action>(GotoSuperMethod)
+
+""" Tabs ------------------------------
+
+map <C-n> <Action>(NextTab)
+map <C-p> <Action>(PreviousTab)
+map <leader>tq <Action>(CloseAllEditors)
+map <leader>tQ <Action>(CloseAllEditorsButActive)
+map <leader>tu <Action>(ReopenClosedTab)
+
+""" Error ------------------------------
+
+map <leader>ep <Action>(GotoPreviousError)
+map <leader>ee <Action>(ActivateProblemsViewToolWindow)
+map <leader>en <Action>(GotoNextError)
+map <leader>ed <Action>(ShowErrorDescription)
+
+""" Git ------------------------------
+
+map <leader>Ga <Action>(Annotate)
+map <leader>Gs <Action>(Vcs.Show.Local.Changes)
+map <leader>Gb <Action>(Git.Branches)
+map <leader>Gc <Action>(ActivateCommitToolWindow)
+map <leader>Gr <Action>(Vcs.RollbackChangedLines)
+
+""" Refactor ------------------------------
+
+map <leader>ca <Action>(ShowIntentionActions)
+map <leader>rr <Action>(RenameElement)
+map <leader>re <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>ri <Action>(Inline)
+map <leader>rt <Action>(Refactorings.QuickListPopupAction)
+map <leader>rc <Action>(CodeCleanup)
+
+""" Debug ------------------------------
+
+map <leader>db <Action>(ToggleLineBreakpoint)
+map <leader>de <Action>(ActivateDebugToolWindow)

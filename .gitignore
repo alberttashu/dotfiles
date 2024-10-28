@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+*.swp
+*.swo
+*.swn
+
+# Mac OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
