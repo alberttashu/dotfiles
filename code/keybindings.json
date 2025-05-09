@@ -1,6 +1,6 @@
 [
   {
-    "key": "ctrl+]",
+    "key": "ctrl+\\",
     "command": "workbench.action.togglePanel"
   },
   {

@@ -22,7 +22,16 @@
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.smartRelativeLine": true,
+  "vim.useCtrlKeys": true,
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "commands": ["redo"]
+    },
     {
       "before": ["<S-h>"],
       "commands": [":bprevious"]
@@ -115,10 +124,10 @@
     }
   ],
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -131,5 +140,13 @@
     "uppercase": false,
     "linesBetweenQueries": 2,
     "keywordCasing": "upper"
-  }
+  },
+  "color-highlight.markerType": "dot-before",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.colorTheme": "Syntax Material Dark Level 1 (beta)",
 }
