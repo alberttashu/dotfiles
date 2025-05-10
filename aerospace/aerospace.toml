@@ -152,9 +152,11 @@ alt-shift-9 = 'move-node-to-workspace 9'
 
 # Open apps 
 alt-t = 'exec-and-forget open -a /Applications/Telegram.app'
-alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
+alt-s = 'exec-and-forget open -a /Applications/Slack.app'
 alt-r = 'exec-and-forget open -a Rider'
-alt-b = 'exec-and-forget open -a /Applications/Google\ Chrome.app'
+alt-c = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.app'
+alt-w = 'exec-and-forget open -a /Applications/Google\ Chrome.app'
+alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
 alt-backslash = 'exec-and-forget open -a Iterm'
 alt-rightSquareBracket = 'exec-and-forget open -a /System/Applications/Calendar.app'
 
@@ -197,10 +199,6 @@ run = ['move-node-to-workspace 4']
 
 
 # Floating by default apps
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'telegram'
-run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'rider'
