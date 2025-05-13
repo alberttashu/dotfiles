@@ -7,3 +7,4 @@ ln -s $DIR/aerospace ~/.config/aerospace
 ln -s $DIR/code/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s $DIR/code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s $DIR/.ideavimrc ~/.ideavimrc
+ln -s $DIR/tmux/.tmux.conf ~/.tmux.conf
